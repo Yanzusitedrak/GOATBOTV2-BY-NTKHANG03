@@ -20,35 +20,35 @@ module.exports = {
       switch (word) {
         case "goodnight":
           message.reply({
-            body: "∘₊✧─────────────────✧₊∘\n  Goodnight Everyone Sleepwell! 🌃",
+            body: "\n  Goodnight Everyone Sleepwell! 🌃",
             attachment: fs.createReadStream("scripts/cmds/noprefix/goodnight.gif"),
           });
           await api.setMessageReaction("🌃", event.messageID, event.threadID, api);
         break;
 case "goodmorning":
           message.reply({
-            body: "∘₊✧─────────────────✧₊∘\n          Goodmorning Everyone!\n                 Have A Nice Day 🌇",
+            body: "\n          Goodmorning Everyone!\n                 Have A Nice Day 🌇",
             attachment: fs.createReadStream("scripts/cmds/noprefix/goodmorning.gif"),
           });
           await api.setMessageReaction("🌇", event.messageID, event.threadID, api);
-   case "welcome 🌸":
+   case "welcome":
           message.reply({
-            body: "∘₊✧─────────────────✧₊∘\n    Welcome! Enjoy Your Stay! 🌸",
+            body: "\n    Welcome! Enjoy Your Stay!",
             attachment: fs.createReadStream("scripts/cmds/noprefix/welcome.gif"),
           });
-          await api.setMessageReaction("🌸", event.messageID, event.threadID, api);
+          await api.setMessageReaction("🎉", event.messageID, event.threadID, api);
 case "prefix2":
           message.reply({
-            body: "Hello, My Lord My Prefix Is » ? «",
+            body: "Hello, My Lord My Prefix Is » # «",
             attachment: fs.createReadStream("scripts/cmds/noprefix/garou.gif"),
           });
-          await api.setMessageReaction("🪐", event.messageID, event.threadID, api);
+          await api.setMessageReaction("🤖", event.messageID, event.threadID, api);
   case "owner":
 message.reply({
-body: "———»ADMIN BOT«———\n❯ Bot Name: yazky\n❯ Bot Owner: CLIFF VINCENT\n❯ Age: 18 \n❯ Gender: Male\n❯ Facebook: https://www.facebook.com/swordigo.swordslush\n❯ Total Group: 12\n❯ Total Users: 862\n❯ Bot Prefix: #\n❯ Today is: Monday,February 5, 2024 3:33 PM\n❯ Thanks for using YAZKY BOT",
+body: "༒OWNER ADMIN BOT༒\n❯ Bot Name: YAZU\n❯ Bot Owner: KYLE BAIT-IT\n❯ Age: 19 \n❯ Gender: Male\n❯ Facebook: https://www.facebook.com/kyleyukaro\n❯ Total Group: 12\n❯ Total Users: 862\n❯ Bot Prefix: #\n❯ Today is: Monday,February 5, 2024 3:33 PM\n❯ Thanks for using YAZU BOT",
             attachment: fs.createReadStream("scripts/cmds/noprefix/goodnight.gif"),
           });
-          await api.setMessageReaction("😙", event.messageID, event.threadID, api);
+          await api.setMessageReaction("🫣", event.messageID, event.threadID, api);
    default:
           return;
       }
