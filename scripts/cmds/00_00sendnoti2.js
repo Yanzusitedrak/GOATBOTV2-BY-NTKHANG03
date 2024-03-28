@@ -4,9 +4,9 @@ const { resolve } = require("path");
 
 module.exports = {
 	config: {
-		name: "sendnoti2",
+		name: "noti2",
 		version: "1.4",
-		author: "cliff",
+		author: "kyle",
 		countDown: 5,
 		role: 2,
 		shortDescription: {
@@ -21,7 +21,7 @@ module.exports = {
 	},
 
 	onStart: async function ({ api, event, args }) {
-		if (this.config.author !== "cliff") {
+		if (this.config.author !== "kyle") {
 			return api.sendMessage(
 				`[ 𝗔𝗡𝗧𝗜 𝗖𝗛𝗔𝗡𝗚𝗘 𝗖𝗥𝗘𝗗𝗜𝗧𝗦 ]
 				𝗔𝗗𝗠𝗜𝗡 𝗠𝗘𝗦𝗦𝗔𝗚𝗘: 
@@ -29,7 +29,7 @@ module.exports = {
 				𝗠𝗘𝗠𝗕𝗘𝗥 𝗠𝗘𝗦𝗦𝗔𝗚𝗘:
 				𝚃𝚑𝚒𝚜 𝚋𝚘𝚝 𝚌𝚛𝚎𝚊𝚝𝚘𝚛 𝚒𝚜 𝚊 𝚌𝚑𝚊𝚗𝚐𝚎 𝚌𝚛𝚎𝚍𝚒𝚝𝚘𝚛 𝚔𝚊𝚢𝚊 𝚋𝚎 𝚊𝚠𝚊𝚛𝚎 𝚗𝚎𝚡𝚝 𝚝𝚒𝚖𝚎.
 				𝗢𝗪𝗡𝗘𝗥 𝗢𝗙 𝗧𝗛𝗜𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗: 
-https://www.facebook.com/swordigo.swordslush`,
+https://www.facebook.com/kyleyukaro`,
 				event.threadID,
 				event.messageID
 			);
@@ -42,9 +42,9 @@ https://www.facebook.com/swordigo.swordslush`,
 		async function sendMessage(thread) {
 			try {
 				await api.sendMessage(
-					`✱:｡✧𝗔𝗡𝗡𝗢𝗨𝗡𝗖𝗘𝗠𝗘𝗡𝗧✧｡:✱
+					`⚠️𝗔𝗡𝗡𝗢𝗨𝗡𝗖𝗘𝗠𝗘𝗡𝗧 𝗙𝗥𝗢𝗠 𝗠𝗬 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥⚠️
 ━━━━━━━━━━━━━━━━━━━
-👤  | 𝗡𝗔𝗠𝗘: CLIFF VINCENT シ︎
+👤  | 𝗡𝗔𝗠𝗘: 𝐾𝑦𝑙𝑒 𝐵𝑎𝑖𝑡-𝑖𝑡シ︎
 ━━━━━━━━━━━━━━━━━━━
 ╭┈ ❒ 💬 | 𝗠𝗘𝗦𝗦𝗔𝗚𝗘:
 ╰┈➤ ${custom}
