@@ -7,7 +7,7 @@ const tinyurl = require('tinyurl');
 module.exports = {
 	config: {
 		name: "videox",
-		aliases: ["video"],
+		aliases: ["video","vd"],
 		version: "1.3.9",
 		author: "Samir Œ",
 		countDown: 5,
@@ -34,7 +34,7 @@ module.exports = {
 				return api.sendMessage("Please provide a video title or reply to a video/audio message.", event.threadID, event.messageID);
 			}
 
-			const originalMessage = await message.reply(`Searching for "${videox}"`);
+			const originalMessage = await message.reply(`🔍 Searching for "${videox}"please wait...`);
 			const searchResults = await yts(videox);
 
 			if (!searchResults.videos.length) {
@@ -62,13 +62,13 @@ module.exports = {
 			stream.on('end', () => {
 				console.info('[DOWNLOADER] Downloaded');
 
-				if (fs.statSync(filePath).size > 87380608) {
+				if (fs.statSync(filePath).size > 999380608) {
 					fs.unlinkSync(filePath);
 					return api.sendMessage('❌ | The file could not be sent because it is larger than 25MB.', event.threadID);
 				}
 
 				const replyMessage = {
-					body: `🔮 | Title: ${video.title}\n⏳ | Duration: ${video.duration.timestamp}`,
+					body: `✅ download successfully\n\n🔮 | Title: ${video.title}\n⏳ | Duration: ${video.duration.timestamp}`,
 					attachment: fs.createReadStream(filePath)
 				};
 
