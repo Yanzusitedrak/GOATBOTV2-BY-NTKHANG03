@@ -37,7 +37,7 @@ module.exports = {
  const musicName = data.join(" ");
 
  try {
- api.sendMessage(`✔ | Searching music for "${musicName}".\ ekxin parkhanuhos...`, event.threadID);
+ api.sendMessage(`🔍 | Searching music for "${musicName}".\ please wait...`, event.threadID);
 
  const searchResults = await yts(musicName);
  if (!searchResults.videos.length) {
@@ -71,7 +71,7 @@ module.exports = {
  }
 
  const message = {
- body: `🙆‍♀️ ❀ tapaiko geet\ ❀ Title: ${music.title}\ Duration: ${music.duration.timestamp}`,
+ body: `✅ download successfully\n━━━━━━━━━━━━━━━━━━━\nBot Admin: Kyle Bait-itツ\nFacebook_Link: https://www.facebook.com/kyleyukaro\n📜Title: ${music.title}\ Duration: ${music.duration.timestamp}\n━━━━━━━━━━━━━━━━━━━`,
  attachment: fs.createReadStream(filePath)
  };
 
