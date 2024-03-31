@@ -35,7 +35,7 @@ module.exports = {
 			const { url } = this.checkLink(event.body);
 			console.log(`Attempting to download from URL: ${url}`);
 			this.downLoad(url, api, event);
-			api.setMessageReaction("🚀", event.messageID, (err) => {}, true);
+			api.setMessageReaction("📥", event.messageID, (err) => {}, true);
 		}
 	},
 	downLoad: function (url, api, event) {
@@ -64,7 +64,7 @@ module.exports = {
 			}
 
 			const shortUrl = await shortenURL(res);
-			const messageBody = `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 instagram 𝖵𝗂𝖽𝖾𝗈\n\n𝗬𝗔𝗭𝗞𝗬 𝗕𝗢𝗧 𝟭.𝟬.𝟬𝘃`;
+			const messageBody = `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 instagram 𝖵𝗂𝖽𝖾𝗈\n\n𝗬𝗔𝗡𝗭𝗨 𝗕𝗢𝗧 𝟮.𝟬.𝟬𝘃`;
 
 			api.sendMessage({
 				body: messageBody,
@@ -90,7 +90,7 @@ module.exports = {
 				response.data.pipe(fs.createWriteStream(path));
 				response.data.on('end', async () => {
 					const shortUrl = await shortenURL(videoUrl);
-					const messageBody = `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 𝖥𝖺𝖼𝖾𝖻𝗈𝗈𝗄 𝖵𝗂𝖽𝖾𝗈\n\n𝗬𝗔𝗭𝗞𝗬 𝗕𝗢𝗧 𝟭.𝟬.𝟬𝘃`;
+					const messageBody = `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 𝖥𝖺𝖼𝖾𝖻𝗈𝗈𝗄 𝖵𝗂𝖽𝖾𝗈\n\n𝗬𝗔𝗡𝗭𝗨 𝗕𝗢𝗧 𝟮.𝟬.𝟬𝘃`;
 
 					api.sendMessage({
 						body: messageBody,
@@ -118,7 +118,7 @@ module.exports = {
 			}
 
 			const shortUrl = await shortenURL(res);
-			const messageBody = `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 𝖳𝗂𝗄𝖳𝗈𝗄\n\n𝗬𝗔𝗭𝗞𝗬 𝗕𝗢𝗧 𝟭.𝟬.𝟬𝘃`;
+			const messageBody = `𝖠𝗎𝗍𝗈 𝖣𝗈𝗐𝗇 𝖳𝗂𝗄𝖳𝗈𝗄\n\n𝗬𝗔𝗡𝗭𝗨 𝗕𝗢𝗧 𝟮.𝟬.𝟬𝘃`;
 
 			api.sendMessage({
 				body: messageBody,
