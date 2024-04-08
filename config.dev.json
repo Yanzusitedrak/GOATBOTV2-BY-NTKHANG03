@@ -17,7 +17,7 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100052395031835",
+    "100080437087855",
     ""
   ],
   "whiteListMode": {
@@ -25,12 +25,12 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "OWNER": "Kyle Bait-it",
+  "OWNER": "Symer",
   "AGE": "19",
   "GENDER": "MALE",
-  "nickNameBot": "[ # ] ➣ 𝙕𝙀𝙋𝙃𝙔𝙍𝙐𝙎𝙑2 𝘼𝙄𓃵",
+  "nickNameBot": "[ $ ] ➣ 𝙎𝙮𝙢𝙚𝙧 𝘼𝙄𓃵",
   "FACEBOOK": "https://www.facebook.com/kyleyukaro",
-  "prefix": "#",
+  "prefix": "$",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
